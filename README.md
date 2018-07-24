@@ -12,29 +12,40 @@ from nlp_toolbox import TxtToCtf, SequenceToSequence
 TxtToCtf.GetHelp()
 
 SequenceToSequence.GetHelp()
+
 SequenceToSequence.GetDataHelp()
 
 # declare directories and file names for TxtToCtf
 txt_path = 'textfiles/directory'
+
 txt_source = 'source_textfile_name.txt'
+
 txt_target = 'target_textfile_name.txt'
+
 ctf_save_directory = 'savectf/directory
+
 ctf_filename = 'training.ctf'
 
 # use TxtToCtf
-text_to_ctf = TxtToCtf(txt_path=txt_path, source_filename = txt_source, target_filename = txt_target, ctf_save_path=ctf_save_directory, ctf_filename = ctf_filename)
-
-# now your .ctf file is saved and ready to use in the SequenceToSequence model
+text_to_ctf = TxtToCtf(txt_path=txt_path, source_filename = txt_source, target_filename = txt_target, ctf_save_path=ctf_save_directory, ctf_filename = ctf_filename) # now your .ctf file is saved and ready to use in the SequenceToSequence model
 
 # declare directories and file names for SequenceToSequence
 model_save_path = 'save_model/directory'
+
 ctf_training_data_path = 'savectf/directory'
+
 name_of_your_model = 'mymodel'
+
 ctf_filename = 'training.ctf'
+
 vocabulary_filename = 'vocabulary.mapping'
+
 epoch_size = 351 # this is the epoch size which will be generated from the example text files in the repo, using the TxtToCtf module. Use SequenceToSequence.GetHelp() to get more info about this variable and how to use it
+
 translate_this_file_path = 'translatefile/directory/translate_this.txt' # what you want to translate with your trained model
+
 translation_save_path = 'translated/directory' # where you want to save the translation
+
 translated_filename = 'my_translation' # name of the translated file saved, without .txt extension
 
 # use SequenceToSequence
