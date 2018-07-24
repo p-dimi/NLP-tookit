@@ -1,0 +1,4 @@
+numpy==1.14.4
+cntk_gpu==2.5.1
+requests==2.18.4
+cntk==2.5.1
