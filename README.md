@@ -1,9 +1,9 @@
 # nlp_toolkit_public
-Requirements - in the toolkit folder, in the Requirements file.
+*Requirements - in the toolkit folder, in the Requirements file.*
 
-Might not work as intended in versions of Python earlier than 3.5
+*Might not work as intended in versions of Python earlier than 3.5*
 
-The public version of my NLP tooklit library
+### The public version of my NLP tooklit library
 
 This NLP toolkit library is intended to make use of Deep Learning NLP models easy.
 Import the nlp_toolbox library to your Python project and use it's classes for what you need.
