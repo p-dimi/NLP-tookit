@@ -4,6 +4,30 @@ The public version of my NLP tooklit library
 This NLP toolkit library is intended to make use of Deep Learning NLP models easy.
 Import the nlp_toolbox library to your Python project and use it's classes for what you need.
 
+Current version supports only a CNTK based Sequence to Sequence translation model. All you need is a Source text file, and a Target text file, in order to train the model. 
+
+For detailed instructions - import nlp_toolbox into your project and use the GetHelp or GetDataHelp commands for a full, detailed instructions printout.
+
+```
+import nlp_toolbox
+```
+
+For help with using the TxtToCtf module (which converts the text files into a CNTK Sequence to Sequence translation model training CTF file):
+```
+nlp_toolbox.TxtToCtf.GetHelp()
+```
+
+For help with using the Sequence to Sequence model itself:
+```
+nlp_toolbox.SequenceToSequence.GetHelp()
+```
+
+For help with how the data in your text files should be formatted and written:
+```
+nlp_toolbox.SequenceToSequence.GetDataHelp()
+```
+
+
 Example use:
 ```
 # import modules
@@ -19,14 +43,19 @@ SequenceToSequence.GetDataHelp()
 ```
 ```
 # declare directories and file names for TxtToCtf
+# directory of the text files
 txt_path = 'textfiles/directory'
 
+# name of the source text file
 txt_source = 'source_textfile_name.txt'
 
+# name of the target text file
 txt_target = 'target_textfile_name.txt'
 
+# directory where to save (and load from) the CTF file
 ctf_save_directory = 'savectf/directory
 
+# name to give the CTF file being created
 ctf_filename = 'training.ctf'
 ```
 ```
@@ -69,4 +98,4 @@ s2s.EvaluateModel()
 
 s2s.TranslateFromFile(translate_path='./allthestuff/translate_this.txt', save_translation_path='./allthestuff', translation_name='silly_stuff')
 ```
-# Video tutorial will be added soon
+
