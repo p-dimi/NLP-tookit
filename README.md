@@ -103,7 +103,15 @@ s2s.InitiateModel() # if you do not already have a saved model. Use SequenceToSe
 s2s.TrainModel(epochs=10, epoch_size=351)
 
 s2s.EvaluateModel()
+```
 
-s2s.TranslateFromFile(translate_path='./allthestuff/translate_this.txt', save_translation_path='./allthestuff', translation_name='silly_stuff')
+
+To use the model for prediction / translation of Sequences, use TranslateFromFile:
+```
+translate_path = './folder/files_to_translate/file_to_translate.txt'
+translation_save_path = './folder/translated_files/'
+translation_save_name = 'translated_file.txt'
+
+s2s.TranslateFromFile(translate_path=translate_path, save_translation_path=translation_save_path, translation_name=translation_save_name)
 ```
 
