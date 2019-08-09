@@ -82,7 +82,8 @@ ctf_training_data_path = ctf_save_directory
 
 name_of_your_model = 'mymodel'
 
-# the vocabulary file is created automatically
+# the vocabulary file is already created automatically by the TxtToCtf. By default it's called vocabulary.mapping, but this can be changed in the code
+# this is merely a declaration of the default name of the saved vocabulary. This isn't hard coded in case you want to use a different vocabulary, and not the one created by the TxtToCtf module
 vocabulary_filename = 'vocabulary.mapping'
 
 epoch_size = 351 # this is the epoch size which will be generated from the example text files in the repo, using the TxtToCtf module. Use SequenceToSequence.GetHelp() to get more info about this variable and how to use it
