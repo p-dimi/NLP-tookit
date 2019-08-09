@@ -49,6 +49,7 @@ SequenceToSequence.GetHelp()
 
 SequenceToSequence.GetDataHelp()
 ```
+#### TextToCtf
 ```
 # declare directories and file names for TxtToCtf
 # directory of the text files
@@ -70,16 +71,18 @@ ctf_filename = 'training.ctf'
 # use TxtToCtf
 text_to_ctf = TxtToCtf(txt_path=txt_path, source_filename = txt_source, target_filename = txt_target, ctf_save_path=ctf_save_directory, ctf_filename = ctf_filename) # now your .ctf file is saved and ready to use in the SequenceToSequence model
 ```
+
+#### SequenceToSequence
 ```
 # declare directories and file names for SequenceToSequence
 model_save_path = 'save_model/directory'
 
-ctf_training_data_path = 'savectf/directory'
+# by default, this directory is the same as the ctf_save_directory, but can be modified to read the CTF from a different directory
+ctf_training_data_path = ctf_save_directory 
 
 name_of_your_model = 'mymodel'
 
-ctf_filename = 'training.ctf'
-
+# the vocabulary file is created automatically
 vocabulary_filename = 'vocabulary.mapping'
 
 epoch_size = 351 # this is the epoch size which will be generated from the example text files in the repo, using the TxtToCtf module. Use SequenceToSequence.GetHelp() to get more info about this variable and how to use it
