@@ -1,5 +1,6 @@
 # nlp_toolkit_public
 Requirements - in the toolkit folder, in the Requirements file.
+
 Might not work as intended in versions of Python earlier than 3.5
 
 The public version of my NLP tooklit library
@@ -11,19 +12,23 @@ Current version supports only a CNTK based Sequence to Sequence translation mode
 
 For detailed instructions - import nlp_toolbox into your project and use the GetHelp or GetDataHelp commands for a full, detailed instructions printout.
 
+
 ```
 import nlp_toolbox
 ```
+
 
 For help with using the TxtToCtf module (which converts the text files into a CNTK Sequence to Sequence translation model training CTF file):
 ```
 nlp_toolbox.TxtToCtf.GetHelp()
 ```
 
+
 For help with using the Sequence to Sequence model itself:
 ```
 nlp_toolbox.SequenceToSequence.GetHelp()
 ```
+
 
 For help with how the data in your text files should be formatted and written:
 ```
