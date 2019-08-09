@@ -1,4 +1,6 @@
 # nlp_toolkit_public
+Requirements - in the toolkit folder, in the Requirements file.
+
 The public version of my NLP tooklit library
 
 This NLP toolkit library is intended to make use of Deep Learning NLP models easy.
