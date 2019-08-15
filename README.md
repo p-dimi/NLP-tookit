@@ -3,9 +3,8 @@
 
 *Might not work as intended in versions of Python earlier than 3.5*
 
-### The public version of my NLP tooklit library
 
-This NLP toolkit library is intended to make use of Deep Learning NLP models easy.
+This NLP toolkit library is intended to make use of Deep Learning NLP models easy. It was originally made for an artist for his project.
 Import the nlp_toolbox library to your Python project and use it's classes for what you need.
 
 Current version supports only a CNTK based Sequence to Sequence translation model. All you need is a Source text file, and a Target text file, in order to train the model. 
